@@ -7,5 +7,10 @@ fetch(API_RANDOM_MAIL)
         return risposta.json();
     })
     .then((jsonData) => {
-        console.log(jsonData);
+        const randomMailList = [];
+        for (i=0; i<10; i++) {
+            let randomMail = jsonData.response;
+            console.log(randomMail);
+            randomMailList.push(randomMail)
+        }
     });
