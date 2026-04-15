@@ -11,9 +11,16 @@ for (i = 0; i < 10; i++) {
         .then((jsonData) => {
             let randomMail = jsonData.response;
             console.log(randomMail);
-            randomMailList.push(randomMail)
+            randomMailList.push(randomMail);
+            // creo il nuovo h6 che contiene la mail
+            const newMailinSite = document.createElement('h6');
+            newMailinSite.innerHTML = randomMail; 
+            /* per quando creo il container:
+                document.querySelector('emails').appendChild(h);
+            */
+            document.body.appendChild(newMailinSite);
         });
-    };
+};
 
 console.log(randomMailList);
 
