@@ -1,0 +1,1 @@
+# Esercizio del Mercoledì 15/04/26: Email List
